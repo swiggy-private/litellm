@@ -11,6 +11,13 @@ RUN ls -ltr /app
 
 RUN ls -ltr /app/docker
 
+### [👇 KEY STEP] ###
+# Install Prisma CLI and generate Prisma client
+RUN pip install prisma 
+RUN prisma generate
+### FIN #### 
+
+
 # Install build dependencies using apt (Debian-based)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
