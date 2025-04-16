@@ -67,3 +67,5 @@ infra:
         database: "litellm-backend"
         disk: 80
         grant: "SELECT,INSERT,UPDATE,CREATE,ALTER,DELETE"
+        rps: 20
+        wps: 40
