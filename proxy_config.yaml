@@ -20,3 +20,7 @@ model_list:
   - model_name: bedrock-mixtral-8x7b-instruct-v0
     litellm_params:
       model: 'bedrock/mistral.mixtral-8x7b-instruct-v0:1'
+router_settings:
+  redis_host: litellm-redis.production.singapore
+  redis_password: ''
+  redis_port: 6379
